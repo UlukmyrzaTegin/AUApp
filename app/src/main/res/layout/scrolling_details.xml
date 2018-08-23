@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/VerticalLinearLayoutTheme"
+    android:padding="@dimen/margin_ten"
+    tools:context=".ui.vacancies.VacanciesAboutActivity"
+    tools:showIn="@layout/activity_vacancies_about">
+
+    <android.support.v7.widget.CardView style="@style/RelativeWrapTheme">
+
+        <RelativeLayout style="@style/RelativeWrapTheme">
+
+            <ScrollView style="@style/ScrollViewTheme">
+
+                <LinearLayout
+                    style="@style/VerticalLinearLayoutTheme"
+                    android:padding="@dimen/padding_fifteen">
+
+                    <ulukmyrzategin.auapp.ui.customs.TextFontBold
+                        android:id="@+id/textViewHeader"
+                        style="@style/DetailsTextFontBoldTheme" />
+
+                    <RelativeLayout
+                        style="@style/RelativeWrapTheme"
+                        android:layout_marginTop="10sp">
+
+                        <FrameLayout
+                            android:id="@+id/imageProfile"
+                            style="@style/VacanciesFrameImageTheme"
+                            android:background="@drawable/ic_profile_name" />
+
+                        <LinearLayout
+                            style="@style/VacanciesLinearLayoutHorizontalTheme"
+                            android:layout_toEndOf="@+id/imageProfile"
+                            android:layout_toRightOf="@+id/imageProfile"
+                            android:weightSum="3">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ulukmyrzategin.auapp.ui.customs.TextFontLight
+                                    android:id="@+id/textViewProfile"
+                                    style="@style/VacanciesTextFontLightTheme"
+                                    android:layout_centerInParent="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2">
+
+                                <ulukmyrzategin.auapp.ui.customs.TextFontLight
+                                    android:id="@+id/textViewDate"
+                                    style="@style/VacanciesTextDateTheme" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/RelativeWrapTheme"
+                        android:layout_marginTop="10sp">
+
+                        <FrameLayout
+                            android:id="@+id/imageSalary"
+                            style="@style/VacanciesFrameImageTheme"
+                            android:background="@drawable/ic_salary" />
+
+                        <LinearLayout
+                            style="@style/VacanciesLinearLayoutHorizontalTheme"
+                            android:layout_toEndOf="@+id/imageSalary"
+                            android:layout_toRightOf="@+id/imageSalary"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ulukmyrzategin.auapp.ui.customs.TextFontLight
+                                    android:id="@+id/textViewSalary"
+                                    style="@style/VacanciesTextFontSalaryTheme"
+                                    android:layout_centerInParent="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ulukmyrzategin.auapp.ui.customs.TextFontLight
+                                    android:id="@+id/textViewSiteAddress"
+                                    style="@style/VacanciesTextSiteTheme" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/RelativeWrapTheme"
+                        android:background="@drawable/border_bottom">
+
+                        <FrameLayout
+                            android:id="@+id/imageCall"
+                            style="@style/VacanciesFrameImageTheme"
+                            android:background="@drawable/ic_telephone_number" />
+
+                        <LinearLayout
+                            style="@style/VacanciesLinearLayoutHorizontalTheme"
+                            android:layout_toEndOf="@+id/imageCall"
+                            android:layout_toRightOf="@+id/imageCall"
+                            android:weightSum="4">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ulukmyrzategin.auapp.ui.customs.TextFontLight
+                                    android:id="@+id/textViewTelephone"
+                                    style="@style/VacanciesTextFontTelephoneTheme"
+                                    android:layout_centerInParent="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3">
+
+                                <CheckBox
+                                    android:id="@+id/checkBoxFeatured"
+                                    style="@style/VacanciesCheckBoxTheme" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ulukmyrzategin.auapp.ui.customs.TextFontLight
+                        android:id="@+id/textViewBody"
+                        style="@style/VacanciesTextBodyTheme" />
+                </LinearLayout>
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/buttonCall"
+                style="@style/VacanciesCallButtonTheme">
+
+                <FrameLayout style="@style/VacanciesCallImageTheme" />
+
+                <TextView style="@style/VacanciesTextCallTheme" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

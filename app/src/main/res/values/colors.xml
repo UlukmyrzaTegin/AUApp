@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+  <!--  <color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPurple">#4E2E54</color>
+    <color name="colorPurpleLight">#72467B</color>
+    <color name="colorOrange">#FFA500</color>
+    <color name="colorOrangeDark">#7b5104</color>
+    <color name="colorDarkGrey">#6D6D6D</color>
+    <color name="colorLightGrey">#c4c4c4</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="colorBackground">#73447c</color>
+    <color name="colorBackgroundDark">#6a3c73</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorProgress">#f9b32a</color>
+    <color name="colorButton">#f9b32a</color>
+    <color name="colorSelected">#ab73b6</color>
+    <color name="colorLinear">#dcdad5</color>
+    <color name="gradStart">#73447d</color>
+    <color name="gradStop">#73447c</color>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ulukmyrzategin.auapp.ui.customs.TextFontBold
+        android:id="@+id/textViewRegime"
+        style="@style/DialogTextTheme"
+        android:text="@string/regime" />
+
+    <LinearLayout
+        android:id="@+id/linearRegime"
+        style="@style/DialogRadioGroupTheme"
+        android:layout_below="@id/textViewRegime">
+
+        <RadioGroup
+            android:id="@+id/radioGroupRegimeFirst"
+            style="@style/DialogLinearLayoutTheme">
+
+            <RadioButton
+                android:id="@+id/radioButtonRegimeAny"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/any" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFull"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/full" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFlexible"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/flexible" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupRegimeSecond"
+            style="@style/DialogLinearLayoutTheme">
+
+            <RadioButton
+                android:id="@+id/radioButtonRemotely"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/remotely" />
+
+            <RadioButton
+                android:id="@+id/radioButtonNight"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/night" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ulukmyrzategin.auapp.ui.customs.TextFontBold
+        android:id="@+id/textViewSalary"
+        style="@style/DialogTextTheme"
+        android:layout_below="@id/linearRegime"
+        android:text="@string/salary" />
+
+    <LinearLayout
+        android:id="@+id/linearSalary"
+        style="@style/DialogRadioGroupTheme"
+        android:layout_below="@+id/textViewSalary">
+
+        <RadioGroup
+            android:id="@+id/radioGroupSalaryFirst"
+            style="@style/DialogLinearLayoutTheme">
+
+            <RadioButton
+                android:id="@+id/radioButtonSalaryAny"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/any" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFiveMore"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/five_thousand" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSalarySecond"
+            style="@style/DialogLinearLayoutTheme">
+
+            <RadioButton
+                android:id="@+id/radioButtonTenMore"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/ten_thousand" />
+
+            <RadioButton
+                android:id="@+id/radioButtonThirtyMore"
+                style="@style/DialogRadioButtonTheme"
+                android:text="@string/thirty_thousand" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linearSalary"
+        style="@style/DialogLinearLayoutButtonTheme">
+
+        <Button
+            android:id="@+id/buttonReset"
+            style="@style/DialogButtonTheme"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            style="@style/DialogButtonTheme"
+            android:text="@string/search" />
+    </LinearLayout>
+
+</RelativeLayout>
